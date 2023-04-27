@@ -160,3 +160,4 @@ cython_debug/
 #.idea/
 
 venv_sequence_prediction/
+sequence-prediction-ann.code-workspace
