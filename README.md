@@ -2,6 +2,12 @@
 
 This repository contains a Python implementation of a simple Artificial Neural Network (ANN) for predicting the next number in a given sequence.
 
+## Inspiration and Credits
+
+This project is inspired by and modifies the source code available at [Enlight: Neural Network](https://enlight.nyc/projects/neural-network). The original project demonstrates the fundamentals of artificial neural networks and walks through the process of creating a simple ANN to predict the XOR function.
+
+In our project, we have adapted the code to predict the next number in a given sequence instead. We have also added features such as data normalization, modularized code, and customizable parameters.
+
 ## Features
 
 - Modularized code with separate classes for data preparation, neural network architecture, and training
@@ -10,6 +16,14 @@ This repository contains a Python implementation of a simple Artificial Neural N
 - Trains using backpropagation and Mean Squared Error (MSE) loss function
 - Splits input data into training and validation sets
 - Normalizes input data using MinMaxScaler from scikit-learn
+
+## Class Diagram
+
+![class diagram](uml/output/class/class.png)
+
+## Sequence Diagram
+
+![sequence diagram](uml/output/sequence/sequence.png)
 
 ## Dependencies
 
