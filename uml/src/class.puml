@@ -1,4 +1,16 @@
 @startuml
+
+
+skinparam class {
+    BackgroundColor lightBlue
+    BorderColor black
+    ArrowColor black
+    FontName Arial
+}
+
+
+title Sequence Prediction ANN Project - Class Diagram
+
 class Main {
   -display_instructions()
   +main()
@@ -28,4 +40,5 @@ class NeuralNetwork {
 Main --> ANNRunner
 ANNRunner --> SequenceDataset
 ANNRunner --> NeuralNetwork
+
 @enduml

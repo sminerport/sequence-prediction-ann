@@ -1,0 +1,72 @@
+@startuml
+!define AWSPUML https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/Legacy
+
+skinparam titleBorderRoundCorner 15
+skinparam titleBorderColor black
+skinparam titleBackgroundColor LightBlue
+skinparam titleFontColor black
+skinparam titleFontSize 20
+skinparam titleFontStyle bold
+skinparam sequence {
+    LifeLineBorderColor black
+    LifeLineBackgroundColor white
+    ParticipantBorderColor black
+    ParticipantBackgroundColor LightGreen
+    ArrowColor black
+}
+
+title ANN Sequence Prediction
+
+actor User
+participant "MainModule" as MM #AACCFF
+participant "SequenceDataset" as SD #AACCFF
+participant "ANNRunner" as AR #AACCFF
+participant "ArtificialNeuralNetwork" as ANN #AACCFF
+
+User -> MM : Start program
+activate MM
+
+MM -> MM : display_instructions()
+User -> MM : Input sequence
+
+MM -> SD : Create dataset
+activate SD
+SD --> MM : Dataset created
+deactivate SD
+
+MM -> AR : Initialize ANNRunner
+activate AR
+
+AR -> ANN : Initialize ANN
+activate ANN
+ANN --> AR : ANN initialized
+deactivate ANN
+
+AR -> ANN : Train ANN
+activate ANN
+
+loop epochs
+    ANN -> ANN : Forward propagation
+    ANN -> ANN : Backward propagation
+    ANN -> ANN : Update weights
+end
+
+ANN --> AR : Trained ANN
+deactivate ANN
+
+AR -> ANN : Make predictions
+activate ANN
+ANN --> AR : Predictions
+deactivate ANN
+
+AR -> MM : Display predictions
+deactivate AR
+
+MM -> ANN : Save weights
+activate ANN
+ANN --> MM : Weights saved
+deactivate ANN
+
+User <-- MM : Program output
+
+@enduml
