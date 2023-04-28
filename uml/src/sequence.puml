@@ -68,5 +68,6 @@ ANN --> MM : Weights saved
 deactivate ANN
 
 User <-- MM : Program output
+deactivate MM
 
 @enduml
