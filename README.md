@@ -25,6 +25,12 @@ In our project, we have adapted the code to predict the next number in a given s
 
 The ANN in this project functions through a process called forward-propagation, where the input data is passed through the network layers to produce an output. The network then calculates the error between the predicted output and the actual output using the Mean Squared Error (MSE) loss function. To minimize this error, the ANN adjusts the weights between neurons using a process called backpropagation. This learning process continues iteratively for a specified number of epochs to improve the ANN's predictions.
 
+## User Diagram
+
+![User UML Diagram](uml/output
+
+## Activity Diagram
+
 ## Class Diagram
 
 ![class diagram](uml/output/class/class.png)

@@ -1,7 +1,22 @@
-@startuml
+!define AWSPUML https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/Legacy
+
+skinparam defaultFontName Arial
+skinparam defaultFontSize 14
+skinparam shadowing false
+skinparam actor {
+  backgroundColor FloralWhite
+  borderColor MediumBlue
+  fontColor MediumBlue
+}
+skinparam usecase {
+  backgroundColor CornflowerBlue
+  borderColor MediumBlue
+  fontColor White
+  roundCorner 25
+}
+
 actor User
-User -- (Input sequence of numbers)
-User -- (Customize training parameters)
-User -- (View prediction results)
-@enduml
+User -- (Input sequence of numbers) : <<input>>
+User -- (Customize training parameters) : <<customize>>
+User -- (View prediction results) : <<view>>
 
