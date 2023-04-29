@@ -4,7 +4,7 @@ This repository contains a Python implementation of a simple Artificial Neural N
 
 ## Inspiration and Credits
 
-This project is inspired by and modifies the source code available at [Enlight: Neural Network](https://enlight.nyc/projects/neural-network). The original project demonstrates the fundamentals of artificial neural networks and walks through the process of creating a simple ANN to predict the XOR function.
+This project is inspired by and modifies the source code available at [Enlight: Neural Network](https://enlight.nyc/projects/neural-network). The original project demonstrates the fundamentals of artificial neural networks and walks through the process of creating a simple ANN.
 
 In our project, we have adapted the code to predict the next number in a given sequence instead. We have also added features such as data normalization, modularized code, and customizable parameters.
 
