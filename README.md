@@ -91,3 +91,8 @@ To further enhance the capabilities of this sequence prediction ANN, future impr
 - Integrating regularization techniques to prevent overfitting, such as L1 and L2 regularization or dropout
 - Optimizing the learning process by implementing advanced optimization algorithms, such as Adam, RMSProp, or AdaGrad
 - Incorporating time series-specific techniques, like Long Short-Term Memory (LSTM) or Gated Recurrent Units (GRU), for better handling of temporal dependencies in the data
+
+## License
+
+This project is released under the [MIT License](LICENSE).
+
