@@ -1,0 +1,7 @@
+@startuml
+actor User
+User -- (Input sequence of numbers)
+User -- (Customize training parameters)
+User -- (View prediction results)
+@enduml
+

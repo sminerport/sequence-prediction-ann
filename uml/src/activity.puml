@@ -1,0 +1,12 @@
+@startuml
+start
+:Load data;
+:Split data into training and validation sets;
+:Normalize data using MinMaxScaler;
+:Initialize neural network;
+:Train neural network using backpropagation;
+:Predict next number in sequence;
+:Display prediction results;
+stop
+@enduml
+
