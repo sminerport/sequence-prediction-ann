@@ -1,4 +1,18 @@
-@startuml
+!define AWSPUML https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v14.0/Legacy
+
+skinparam defaultFontName Arial
+skinparam defaultFontSize 14
+skinparam shadowing false
+skinparam activity {
+  backgroundColor CornflowerBlue
+  borderColor MediumBlue
+  fontColor White
+  roundCorner 25
+}
+skinparam arrow {
+  color MediumBlue
+}
+
 start
 :Load data;
 :Split data into training and validation sets;
@@ -8,5 +22,3 @@ start
 :Predict next number in sequence;
 :Display prediction results;
 stop
-@enduml
-
