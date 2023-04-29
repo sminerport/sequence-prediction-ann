@@ -63,6 +63,12 @@ The ANN in this project functions through a process called forward-propagation, 
 4. Input a sequence of numbers separated by spaces when prompted (e.g., 2 4 6 8 10)
 5. Observe the ANN's training progress and final predictions based on the validation data
 
+## Screenshot
+
+<p align="center">
+  <img src="images/sequence-ann.png" alt="Screenshot of program instructions and successful execution" width="600">
+</p>
+
 ## Customization
 
 You can customize various parameters such as the number of epochs, percentage of data used for training, and the number of neurons in the hidden layer by modifying the constants in the main script.
