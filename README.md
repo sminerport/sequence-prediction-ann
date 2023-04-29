@@ -27,19 +27,27 @@ The ANN in this project functions through a process called forward-propagation, 
 
 ## User Diagram
 
-![User UML Diagram](uml/output/user/user.png)
+<p align="center">
+  <img src="uml/output/user/user.png">
+</p>
 
 ## Activity Diagram
 
-![Activity UML Diagram](uml/output/activity/activity.png)
+<p align="center">
+  <img src="uml/output/activity/activity.png">
+</p>
 
 ## Class Diagram
 
-![class diagram](uml/output/class/class.png)
+<p align="center">
+  <img src="uml/output/class/class.png">
+</p>
 
 ## Sequence Diagram
 
-![sequence diagram](uml/output/sequence/sequence.png)
+<p align="center">
+  <img src="uml/output/sequence/sequence.png">
+</p>
 
 ## Dependencies
 
@@ -51,7 +59,7 @@ The ANN in this project functions through a process called forward-propagation, 
 
 1. Clone the repository
 2. Install dependencies: `pip install -r requirements.txt`
-3. Run the main script: `python main.py`
+3. Run the main script: `python src/main.py`
 4. Input a sequence of numbers separated by spaces when prompted (e.g., 2 4 6 8 10)
 5. Observe the ANN's training progress and final predictions based on the validation data
 
