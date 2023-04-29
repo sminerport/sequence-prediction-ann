@@ -10,7 +10,7 @@ Artificial Neural Networks (ANNs) are computational models inspired by the human
 
 This project is inspired by and modifies the source code available at [Enlight: Neural Network](https://enlight.nyc/projects/neural-network). The original project demonstrates the fundamentals of artificial neural networks and walks through the process of creating a simple ANN.
 
-In our project, we have adapted the code to predict the next number in a given sequence instead. We have also added features such as data normalization, modularized code, and customizable parameters.
+In our project, we have adapted the code to predict the next number in a given sequence. We have also added features such as data normalization, modularized code, and customizable parameters.
 
 ## Features
 
