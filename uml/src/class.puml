@@ -1,0 +1,44 @@
+@startuml
+
+
+skinparam class {
+    BackgroundColor lightBlue
+    BorderColor black
+    ArrowColor black
+    FontName Arial
+}
+
+
+title Sequence Prediction ANN Project - Class Diagram
+
+class Main {
+  -display_instructions()
+  +main()
+}
+
+class ANNRunner {
+  +__init__(sequence: list, epochs: int, split_pct: int)
+  +train()
+  +predict()
+  +save_weights()
+}
+
+class SequenceDataset {
+  +__init__(sequence: list, split_pct: int)
+  +split_data()
+}
+
+class NeuralNetwork {
+  +__init__()
+  +forward(X: np.ndarray) : np.ndarray
+  +backward(X: np.ndarray, y: np.ndarray, o: np.ndarray)
+  +train(X: np.ndarray, y: np.ndarray)
+  +predict(X: np.ndarray, scaler_x: MinMaxScaler, scaler_y: MinMaxScaler)
+  +save_weights(prefix: str)
+}
+
+Main --> ANNRunner
+ANNRunner --> SequenceDataset
+ANNRunner --> NeuralNetwork
+
+@enduml

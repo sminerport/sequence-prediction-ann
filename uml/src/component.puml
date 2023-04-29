@@ -1,0 +1,22 @@
+@startuml
+!define MAIN_COMPONENTS
+package "Sequence Prediction ANN" {
+  [DataPreparation::prepare_data()]
+  [DataPreparation::normalize_data()]
+  [NeuralNetwork::initialize_weights()]
+  [NeuralNetwork::sigmoid_activation()]
+  [NeuralNetwork::forward_pass()]
+  [NeuralNetwork::backward_pass()]
+  [NeuralNetwork::update_weights()]
+  [NeuralNetwork::predict()]
+}
+
+[DataPreparation::prepare_data()] --> [DataPreparation::normalize_data()] : <<uses>>
+[DataPreparation::normalize_data()] --> [NeuralNetwork::initialize_weights()] : <<uses>>
+[NeuralNetwork::initialize_weights()] --> [NeuralNetwork::sigmoid_activation()] : <<uses>>
+[NeuralNetwork::sigmoid_activation()] --> [NeuralNetwork::forward_pass()] : <<uses>>
+[NeuralNetwork::forward_pass()] --> [NeuralNetwork::backward_pass()] : <<uses>>
+[NeuralNetwork::backward_pass()] --> [NeuralNetwork::update_weights()] : <<uses>>
+[NeuralNetwork::update_weights()] --> [NeuralNetwork::predict()] : <<uses>>
+
+@enduml

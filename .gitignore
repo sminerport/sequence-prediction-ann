@@ -161,3 +161,5 @@ cython_debug/
 
 venv_sequence_prediction/
 sequence-prediction-ann.code-workspace
+venv_ann/
+.vscode/
